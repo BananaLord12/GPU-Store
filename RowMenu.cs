@@ -22,7 +22,7 @@ namespace GPU_Store
 
         public string returnConString()
         {
-            return @"DataSource=C:\Users\Atanas\Documents\My Projects\GPU Store\GPU Store\GPU_Store.db";
+            return @"DataSource=" + System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\GPU_Store.db";
         }
 
         public void returnProductModel(string id)
